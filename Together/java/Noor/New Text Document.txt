@@ -1,1 +1,74 @@
-hi
+import javax.swing.*;
+
+public class Tolbar {
+  
+ public static void main (String[] args) {
+ int cho1;
+ String s="";
+ s=JOptionPane.showInputDialog("1.File"+"\t"+"2.Edit"+"\t"+"3.Option"+"\t"+"4.Help");
+ cho1=Integer.parseInt(s);
+ 
+ switch(cho1){
+ 	
+ 	case 1:aolMenu();
+ 	break;
+ 	
+ 	case 2: taniMenu();
+ 	break;
+ 	
+ 	case 3:JOptionPane.showMessageDialog(null,"OPtion");
+ 	break;
+ 	
+ 	case 4:
+ 		JOptionPane.showMessageDialog(null,"Help");
+ 		break;
+ 		
+ }
+ 
+ }
+ 
+ public static void aolMenu(){
+ 	int cho2;
+ 	String c="";
+ 	c=JOptionPane.showInputDialog("1.Open"+"\t"+"2.Sing Up"+"\t"+"3.Call"+"\t"+"4.Exit");
+	 cho2=Integer.parseInt(c);
+ 
+ switch(cho2){
+ 	
+ 	case 1: //دالة الادخال تبعت شاكر \\
+ 	break;
+ 	
+ 	case 2: //دالة شاكر "\\
+ 	break;
+ 	
+ 	case 3: //دالة أبو حمدان //
+ 	break;
+ 	
+ 	case 4:
+ 		System.exit(0);
+ 		break;
+ 	
+ 	default:
+ 		JOptionPane.showMessageDialog(null,"chek your choice ");	
+ }
+ 	
+ }//eng method 1//
+ 
+ public static void taniMenu(){
+ 	int cho3;
+ 	String x="";
+ 	x=JOptionPane.showInputDialog("1.add new Person"+"\t"+"2.add new Group "+"\t"+"defoult");
+ 	cho3=Integer.parseInt(x);
+ 	
+ 	switch(cho3){
+ 		case 1: 
+ 			break;
+ 		case 2:
+ 			break;
+ 		case 3:
+ 			break;		
+ 	}
+ 	
+ }//end method 2//
+ 
+}
